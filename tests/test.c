@@ -16,6 +16,8 @@ void exit(int status) {
       : "%rax", "%rdi");
 }
 
+
+//! Deprecated? There were issues with gcc not recognizing main as the entry point
 // void _start() {
 //   int ret = test_print();
 //   exit(ret);
