@@ -1,17 +1,41 @@
 # Custom C Standard Library
 
-This project is a custom implementation of the C Standard Library, specifically designed for Linux systems. It aims to provide a set of essential functions and utilities commonly found in the standard library, but without relying on the built-in stdlib from C.
-
-## Features
-
-- Custom implementation of essential C library functions.
-- Designed specifically for Linux systems.
-- Provides a lightweight alternative to the standard library.
+This project is a custom implementation of the C standard library.
 
 ## Getting Started
 
-To use this custom C Standard Library in your Linux project, follow these steps:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-2. Include the necessary header files in your C source code.
-3. Build and link your project with the custom library.
+### Prerequisites
+
+- CMake version 3.10 or higher
+- GCC compiler
+
+### Building
+
+To build the project, navigate to the project directory and run the following commands:
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
+This will generate a static library `libcustom_c_stdlib.a` in the `build` directory.
+
+## Running the tests
+
+After building the project, you can run the tests with the following command:
+
+```bash
+./test.out
+```
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
