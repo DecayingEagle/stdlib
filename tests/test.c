@@ -1,6 +1,5 @@
 #include "test.h"
 
-
 int test_print() {
   char *str = "Hello, World!\n";
   size_t len = 0;
@@ -17,7 +16,11 @@ void exit(int status) {
       : "%rax", "%rdi");
 }
 
-void _start() {
-  int ret = test_print();
-  exit(ret);
+// void _start() {
+//   int ret = test_print();
+//   exit(ret);
+// }
+
+int main() {
+  return test_print();
 }

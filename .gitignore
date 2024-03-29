@@ -1,0 +1,28 @@
+# Compiled object files
+*.o
+
+# Assembly output for debugging
+*.S
+
+# Executables
+*.exe
+*.out
+
+# Libraries
+*.a
+*.so
+
+# Build directories
+build/
+bin/
+
+# Dependency directories
+deps/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db

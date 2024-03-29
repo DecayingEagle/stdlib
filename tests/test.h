@@ -1,5 +1,5 @@
-#include "print.c"
 #include "types.h"
+#include "print.h"
 #include "strlen.h"
 
 #ifndef TEST_H
