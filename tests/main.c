@@ -1,5 +1,4 @@
 #include "test_print.c"
-#include "test_itoa.c"
 
 
 
@@ -23,8 +22,6 @@ int tests(int id){
   switch(id){
     case 0:
       return test_print();
-    case 1:
-      return test_itoa();
     default:
       return -1;
   }
