@@ -16,7 +16,7 @@ void* malloc(const size_t size){
       "mov %1, %%rsi\n"
       "mov $0x03, %%rdx\n"
       "mov $0x21, %%r10\n"
-      "mov $0x0, %%r8\n"
+      "mov $-1, %%r8\n"
       "mov $0x0, %%r9\n"
       "syscall\n"
       "mov %%rax, %0\n"
