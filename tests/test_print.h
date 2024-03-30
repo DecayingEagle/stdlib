@@ -1,9 +1,8 @@
-#include "types.h"
-#include "print.h"
-#include "strlen.h"
-
 #ifndef TEST_H
 #define TEST_H
+
+#include "types.h"
+#include "print.h"
 
 int test_print();
 
