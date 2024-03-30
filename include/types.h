@@ -11,4 +11,6 @@
 // Define your custom types here
 typedef unsigned int size_t;
 
+#define NULL ((void *)0)
+
 #endif // TYPES_H
