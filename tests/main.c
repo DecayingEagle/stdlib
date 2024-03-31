@@ -21,6 +21,8 @@
 
 int tests(int id){
   switch(id){
+    case -1:
+      return test_print() + test_mem();
     case 0:
       return test_print();
     case 1:
@@ -31,6 +33,14 @@ int tests(int id){
 
 }
 
-int main() {
-  return tests(1);
+int main(int argc, char** argv) {
+  if (argc == 1) {
+    return tests(-1);
+  } else {
+    //this will only work after i implement the atoi function
+    //return tests(atoi(argv[1]));
+
+    //temp
+    return tests(0);
+  }
 }
