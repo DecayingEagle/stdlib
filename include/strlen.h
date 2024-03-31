@@ -1,7 +1,7 @@
-#include "types.h"
-
 #ifndef STRLEN_H
 #define STRLEN_H
+
+#include "types.h"
 
 /**
  * Calculates the length of a null-terminated string.
