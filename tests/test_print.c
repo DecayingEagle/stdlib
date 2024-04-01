@@ -1,4 +1,5 @@
-#include "test_print.h"
+#include "types.h"
+#include "print.h"
 
 int test_print() {
   char *str = "Hello, World!\n";

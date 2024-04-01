@@ -1,5 +1,7 @@
 #include "test_print.c"
-#include "test_itoa.c"
+#include "test_mem.c"
+#include "test_atox.c"
+#include "atoi.h"
 
 
 
@@ -21,16 +23,24 @@
 
 int tests(int id){
   switch(id){
+    case -1:
+      return test_print() + test_mem() + test_atof() + test_atoi() + test_atol();
     case 0:
       return test_print();
     case 1:
-      return test_itoa();
+      return test_mem();
+    case 2:
+      return test_atof() + test_atoi() + test_atol();
     default:
       return -1;
   }
 
 }
 
-int main() {
-  return tests(1);
+int main(int argc, char** argv) {
+  if (argc == 1) {
+    return tests(-1);
+  } else {
+    return tests(atoi(argv[1]));
+  }
 }
